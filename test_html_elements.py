@@ -19,7 +19,7 @@ class TestContacts(unittest.TestCase):
         
         # Check for the presence of all 10 test contacts
         for i in range(10):
-            test_number = f'123-456-789 {i}'
+            test_number = f'123-456-789{i}'
             assert test_number in driver.page_source, f"Test Number {test_number} not found in page source"
         print("Test completed successfully. All 10 test contacts were verified.")
 
