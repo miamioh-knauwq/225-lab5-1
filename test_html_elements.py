@@ -19,8 +19,8 @@ class TestContacts(unittest.TestCase):
         
         # Check for the presence of all 10 test contacts
         for i in range(10):
-            test_name = f'Test Name {i}'
-            assert test_name in driver.page_source, f"Test contact {test_name} not found in page source"
+            test_number = f'123-456-789 {i}'
+            assert test_number in driver.page_source, f"Test Number {test_number} not found in page source"
         print("Test completed successfully. All 10 test contacts were verified.")
 
     def tearDown(self):
